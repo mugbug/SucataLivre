@@ -6,84 +6,127 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway"
     rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!-- <link href="css/default.css" type="text/css" rel="stylesheet"> -->
   </head>
   <body>
-    <!-- menu -->
-    <ul>
-      <li><a href="index.html" class="active">
-        SucataLivre</a>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Metal</a>
-        <div class="dropdown-content">
-          <a href="#">Metal1</a>
-          <a href="#">Metal2</a>
-          <a href="#">Metal3</a>
-        </div>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Plástico</a>
-        <div class="dropdown-content">
-          <a href="#">Plástico1</a>
-          <a href="#">Plástico2</a>
-          <a href="#">Plástico3</a>
-        </div>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Vidro</a>
-        <div class="dropdown-content">
-          <a href="#">Vidro1</a>
-          <a href="#">Vidro2</a>
-          <a href="#">Vidro3</a>
-        </div>
-      </li>
-      <li style="float:right">
-        <a href="#" id="loginform">Entrar</a>
-        <div class="login">
-          <div class="arrow-up"></div>
-          <div class="formholder">
-            <div class="randompad">
-              <fieldset>
-                <label name="email">Email</label>
-                <input type="email" placeholder="example@example.com" />
-                <label name="password">Senha</label>
-                <input type="password" placeholder="**********" />
-                <!-- <input type="submit" value="Login" /> -->
-                <a href="index.html" id="submit">Submeter</a>
-              </fieldset>
+    <div class="register_page">
+      <!-- menu bar -->
+      <ul class="menu_bar">
+        <li>
+          <a href="index.html" class="active">SucataLivre</a>
+        </li>
+        <li class="dropdown">
+          <a href="#"  class="dropbtn">Metal</a>
+          <div class="dropdown-content">
+            <a href="#">Metal1</a>
+            <a href="#">Metal2</a>
+            <a href="#">Metal3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Plástico</a>
+          <div class="dropdown-content">
+            <a href="#">Plástico1</a>
+            <a href="#">Plástico2</a>
+            <a href="#">Plástico3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Vidro</a>
+          <div class="dropdown-content">
+            <a href="#">Vidro1</a>
+            <a href="#">Vidro2</a>
+            <a href="#">Vidro3</a>
+          </div>
+        </li>
+        <li style="float:right">
+          <a href="#" id="loginform">Entrar</a>
+          <div class="login">
+            <div class="arrow-up"></div>
+            <div class="formholder">
+              <div class="randompad">
+                <form action="index1.html"> <!-- action= pesquisar cadastro no banco + logar -->
+                  <fieldset>
+                    <label name="email">Email</label>
+                    <input type="email" placeholder="example@example.com" />
+                    <label name="password">Senha</label>
+                    <input type="password" placeholder="**********" />
+                    <input class="submit" type="submit" value="Submeter" />
+                  </fieldset>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-        <script src="js/index.js"></script>
-      </li>
-      <li style="float:right">
-        <a href="#">Cadastrar</a>
-      </li>
+          <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+          <script src="js/index.js"></script>
+        </li>
+        <li style="float:right">
+          <a href="register.html">Cadastrar</a>
+        </li>
 
-      <li style="float:right">
-        <form method="get" action="http://google.com" id="search">
-          <input name="q" type="text" size="40" placeholder="Buscar" />
-        </form>
-      </li>
+        <li style="float:right">
+          <form method="get" action="http://google.com" id="search">
+            <input name="q" type="text" size="40" placeholder="Buscar" />
+          </form>
+        </li>
 
-    </ul>
-    <!-- menu -->
-    <div class="registerframe">
-      <h1>Cadastre-se<h1>
-      <div class="registerfields">
-        <fieldset>
-          <label name="nomecompleto">Nome Completo</label><br>
-          <input type="nomecompleto" placeholder="Pedro das Couve" /> <br>
-          <label name="email">Email</label><br>
-          <input type="email" placeholder="example@example.com" /> <br>
-          <label name="password">Escolha uma Senha</label><br>
-          <input type="password" placeholder="**********" /> <br>
-          <label name="passwordc">Confirme sua Senha</label><br>
-          <input type="passwordc" placeholder="**********" /> <br>
-          <a href="index.html" id="submit">Submeter</a>
+      </ul>
+      <!-- menu bar -->
+      <form action="index1.html" class="register">
+        <h1>Cadastro</h1>
+        <fieldset class="row1">
+          <legend>Detalhes da Conta
+          </legend>
+          <p>
+            <label>Email*
+            </label>
+            <input name="email" type="email"/>
+            <label>Confirme email*
+            </label>
+            <input name="c_email" type="email"/>
+          </p>
+          <p>
+            <label>Senha*
+            </label>
+            <input name="password" type="password"/>
+            <label>Confirme Senha*
+            </label>
+            <input name="c_password" type="password"/>
+          </p>
         </fieldset>
-      </div>
+        <fieldset class="row2">
+          <legend>Detalhes Pessoais
+          </legend>
+          <p>
+            <label>Nome *
+            </label>
+            <input name="name" type="text" class="long"/>
+            <label>Num. para Contato *
+            </label>
+            <input name="phone" type="text" maxlength="10"/>
+          </p>
+          <p>
+            <label class="optional">Endereço*
+            </label>
+            <input name="adress" type="text" class="long"/>
+            <label>Cidade *
+            </label>
+            <input name="city" type="text" class="long"/>
+          </p>
+          <p>
+            <label>País *
+            </label>
+            <input name="country" type="text" class"long"/>
+            <label class="optional">Website
+            </label>
+            <input name="website" class="long" type="text" value="http://"/>
+          </p>
+        </fieldset>
+        <label class="obinfo">*campos obrigatórios.
+        </label>
+        <div><input name="register_btn" class="submit" type="submit" value="Cadastrar e Logar &raquo;" /></div>
+      </form>
     </div>
+
   </body>
 </html>

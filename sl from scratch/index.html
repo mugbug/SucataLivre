@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- menu -->
-    <ul>
+    <ul class="menu_bar">
       <li>
         <a href="index.html" class="active">SucataLivre</a>
       </li>
@@ -45,13 +45,15 @@
           <div class="arrow-up"></div>
           <div class="formholder">
             <div class="randompad">
-              <fieldset>
-                <label name="email">Email</label>
-                <input type="email" placeholder="example@example.com" />
-                <label name="password">Senha</label>
-                <input type="password" placeholder="**********" />
-                <a href="index1.html" id="submit">Submeter</a>
-              </fieldset>
+              <form action="index1.html"> <!-- action= pesquisar cadastro no banco + logar -->
+                <fieldset>
+                  <label name="email">Email</label>
+                  <input type="email" placeholder="example@example.com" />
+                  <label name="password">Senha</label>
+                  <input type="password" placeholder="**********" />
+                  <input class="submit" type="submit" value="Submeter" />
+                </fieldset>
+              </form>
             </div>
           </div>
         </div>

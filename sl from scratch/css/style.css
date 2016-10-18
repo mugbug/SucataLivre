@@ -1,7 +1,10 @@
 * {
   font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
 }
-ul {
+.menu_bar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -10,8 +13,7 @@ ul {
 }
 
 li {
-  /*display: inline;*/
-  float: left;
+  display: inline-block;
 }
 
 li a, .dropbtn{
@@ -41,6 +43,11 @@ li a:hover, .dropdown:hover .dropbtn {
   text-decoration: none;
   display: block;
   text-align: left;
+}
+
+#profile-ddc {
+  position: fixed;
+  right: 8px;
 }
 
 .dropdown-content a:hover {
@@ -101,9 +108,14 @@ li a:hover, .dropdown:hover .dropbtn {
 
 /*--- login popup ----*/
 .login {
-  position: relative;
+  position: fixed;
+  right: 8px;
   width: 350px;
   display: none;
+}
+
+.login fieldset {
+  padding: 10px;
 }
 
 .arrow-up {
@@ -112,7 +124,7 @@ li a:hover, .dropdown:hover .dropbtn {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 15px solid #ECF0F1;
-  right: 10%;
+  right: 5%;
   position: absolute;
   top: -10px;
 }
@@ -122,6 +134,7 @@ li a:hover, .dropdown:hover .dropbtn {
   width: 350px;
   padding-top: 5px;
 }
+
 .formholder input[type="email"], .formholder input[type="password"] {
   padding: 7px 5px;
   margin: 10px 0;
@@ -137,18 +150,19 @@ li a:hover, .dropdown:hover .dropbtn {
   outline: none;
   box-shadow: 0 0 1px 1px #093;
 }
-/*.formholder input[type="submit"] {*/
-#submit {
+.submit {
   color: white;
   background: #333;
-  padding: 10px;
+  padding: 5px 10px;
   font-size: 20px;
   display: block;
-  /*width: 100%;*/
+  width: 100%;
+  margin: auto;
   border: none;
+  text-align: center;
+  text-decoration: none;
 }
-/*.formholder input[type="submit"]:hover {*/
-#submit:hover {
+.submit:hover {
   color: white;
   background: #093;
 }
@@ -164,26 +178,13 @@ li a:hover, .dropdown:hover .dropbtn {
 
 .banner {
   background: url(../img/banner.jpg) no-repeat center top;
-  /*filter: brightness(50%);*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
   min-height: 600px;
-  /*-webkit-transition: 0.4s linear;
-  -moz-transition: 0.4s linear;
-  -o-transition: 0.4s linear;
-  transition: 0.4s linear;*/
 }
-
-/*.banner:hover {
--webkit-transition: 0.4s linear;
--moz-transition: 0.4s linear;
--o-transition: 0.4s linear;
-transition: 0.4s linear;
-filter: brightness(100%);
-}*/
 
 .banner_desc{
   padding-top:9em;
@@ -228,28 +229,95 @@ filter: brightness(100%);
   background-color: #093;
 }
 
+
 /* register.html */
-.registerframe {
-  text-align: center;
+div.register_page{
+  background-color: #ecf0f1;
+  padding-bottom: 100px;
 }
 
-.registerfields {
-  padding-left: 35%;
-  padding-right: 35%;
-  line-height: 25px;
-  font-size: 16px;
-  text-align: justify;
-  width: 30%;
+form.register{
+  width:800px;
+  margin: 20px auto 0px auto;
+  height:430px;
+  background-color:#fff;
+  padding:5px;
+  -moz-border-radius:20px;
+  -webkit-border-radius:20px;
 }
 
-.registerfields input {
-  width: 100%;
+.register h1 {
+  margin: 30px auto 30px 10px;
 }
 
-.registerfields input[type="checkbox"] {
-  width: auto;
+form p{
+  font-size: 8pt;
+  clear:both;
+  margin: 0;
+  color:gray;
+  padding:4px;
 }
-.registerfields #submit {
-  text-align: center;
-  text-decoration: none;
+form.register fieldset.row1, form.register fieldset.row2{
+  width:770px;
+  padding:5px;
+  float:left;
+  border:0;
+  border-top:1px solid #F5F5F5;
+  margin-bottom:15px;
+  padding-left: 30px;
+}
+form.register fieldset.row1 label, form.register fieldset.row2 label{
+  width:140px;
+  float: left;
+  text-align: right;
+  margin-right: 6px;
+  margin-top:2px;
+}
+
+form.register fieldset.row2 {
+  border-bottom: 1px solid #F5F5F5;
+  padding-bottom: 10px;
+}
+
+form.register legend
+{
+  color: #093;
+  text-shadow: 2px;
+  padding:2px;
+  margin-left: 14px;
+  font-weight:bold;
+  font-size: 14px;
+  font-weight:100;
+}
+form.register label{
+  width:98px;
+  float: left;
+  text-align: right;
+  margin-right: 6px;
+  margin-top:2px;
+}
+form.register label.optional{
+  float: left;
+  text-align: right;
+  margin-right: 6px;
+  margin-top:2px;
+}
+form.register label.obinfo{
+  float:right;
+  padding:3px;
+  font-style:italic;
+}
+form.register input{
+  border: 1px solid #E1E1E1;
+  width: 140px;
+  float: left;
+  margin-right: 5px;
+}
+form.register input.submit {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 200px;
+}
+label.obinfo {
+  font-size: 8px;
 }
