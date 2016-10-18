@@ -1,0 +1,255 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  /*display: inline;*/
+  float: left;
+}
+
+li a, .dropbtn{
+  display: block;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #093;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: white;
+  background-color: #093
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: #093;
+}
+
+/* --- search --- */
+#search {
+  display: block;
+  padding: 4px;
+  text-align: center;
+  padding: 9px 11px;
+  text-decoration: none;
+}
+
+#search input[type="text"] {
+  background: url(search-dark.png) no-repeat 10px 6px #444;
+  border: 0 none;
+  font: bold 12px;
+  color: white;
+  width: 150px;
+  padding: 6px 15px 6px 35px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+}
+
+#search input[type="text"]:focus {
+  width: 200px;
+}
+/* --- search --- */
+
+#loginform {
+  color: #333;
+  background-color: Gold;
+}
+
+#loginform:hover {
+  color: white;
+  background-color: #093;
+}
+
+/*--- login popup ----*/
+.login {
+  position: relative;
+  width: 350px;
+  display: none;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 15px solid #ECF0F1;
+  right: 10%;
+  position: absolute;
+  top: -10px;
+}
+
+.formholder {
+  background: #ecf0f1;
+  width: 350px;
+  padding-top: 5px;
+}
+.formholder input[type="email"], .formholder input[type="password"] {
+  padding: 7px 5px;
+  margin: 10px 0;
+  width: 96%;
+  display: block;
+  border: none;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.formholder input[type="email"]:focus, .formholder input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px #093;
+}
+/*.formholder input[type="submit"] {*/
+#submit {
+  color: white;
+  background: #333;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  /*width: 100%;*/
+  border: none;
+}
+/*.formholder input[type="submit"]:hover {*/
+#submit:hover {
+  color: white;
+  background: #093;
+}
+
+.randompad {
+  padding: 10px;
+}
+
+.green {
+  color: #333;
+}
+/*--- login popup ----*/
+
+.banner {
+  background: url(../img/banner.jpg) no-repeat center top;
+  /*filter: brightness(50%);*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  /*-webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;*/
+}
+
+/*.banner:hover {
+-webkit-transition: 0.4s linear;
+-moz-transition: 0.4s linear;
+-o-transition: 0.4s linear;
+transition: 0.4s linear;
+filter: brightness(100%);
+}*/
+
+.banner_desc{
+  padding-top:9em;
+  padding-left: 2em;
+  position: left;
+}
+.banner_desc h1{
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #000;
+  line-height: 1;
+}
+.banner_desc h2{
+  color: #fff;
+  text-transform:uppercase;
+  font-size:2em;
+  font-weight:500;
+  letter-spacing:1px;
+  text-shadow: 2px 2px #000;
+}
+.button {
+  display: block;
+  z-index: 2;
+  text-shadow: none;
+  margin-top:2em;
+  max-width: none;
+}
+.button a{
+  text-decoration: none;
+  color: white;
+  background: #333;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.button a:hover {
+  color: white;
+  background-color: #093;
+}
+
+/* register.html */
+.registerframe {
+  text-align: center;
+}
+
+.registerfields {
+  padding-left: 35%;
+  padding-right: 35%;
+  line-height: 25px;
+  font-size: 16px;
+  text-align: justify;
+  width: 30%;
+}
+
+.registerfields input {
+  width: 100%;
+}
+
+.registerfields input[type="checkbox"] {
+  width: auto;
+}
+.registerfields #submit {
+  text-align: center;
+  text-decoration: none;
+}

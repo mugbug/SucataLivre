@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SucataLivre</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway"
+    rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- menu -->
+    <ul>
+      <li>
+        <a href="index.html" class="active">SucataLivre</a>
+      </li>
+      <li class="dropdown">
+        <a href="#"  class="dropbtn">Metal</a>
+        <div class="dropdown-content">
+          <a href="#">Metal1</a>
+          <a href="#">Metal2</a>
+          <a href="#">Metal3</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Plástico</a>
+        <div class="dropdown-content">
+          <a href="#">Plástico1</a>
+          <a href="#">Plástico2</a>
+          <a href="#">Plástico3</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Vidro</a>
+        <div class="dropdown-content">
+          <a href="#">Vidro1</a>
+          <a href="#">Vidro2</a>
+          <a href="#">Vidro3</a>
+        </div>
+      </li>
+      <li style="float:right" class="dropdown">
+        <a href="#" id="loginform" class="dropbtn">Pedro</a>
+        <div class="dropdown-content">
+          <a href="sell.html">Anunciar Produto</a>
+          <a href="index.html">Sair</a>
+        </div>
+      </li>
+
+      <li style="float:right">
+        <form method="get" action="http://google.com" id="search">
+          <input name="q" type="text" size="40" placeholder="Buscar" />
+        </form>
+      </li>
+
+    </ul>
+    <!-- menu -->
+    <!-- body -->
+    <div class="registerframe">
+      <h1>Cadastre seu produto:</h1>
+      <div class="registerfields">
+        <fieldset>
+          <input name="sellbox" type="checkbox" value="vender">Vender
+          <input name="buybox" type="checkbox" value="comprar">Comprar<br>
+          <label name="adtitle">Título do Anúncio:</label><br>
+          <input type="adtitle" placeholder="Vendo fio de cobre" /> <br>
+          <label name="amount">Quantidade</label><br>
+          <input type="amountin" placeholder="1000kg" /> <br>
+          <label name="priceperunitlb">Preço por Unidade</label><br>
+          <input type="priceperunitin" placeholder="R$ 4,00/kg" /> <br>
+          <a href="#" id="submit">Submeter</a>
+        </fieldset>
+      </div>
+    </div>
+    <!-- body -->
+  </body>
+</html>
