@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway"
     rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
-    <!-- <link href="css/default.css" type="text/css" rel="stylesheet"> -->
   </head>
   <body>
     <div class="register_page">
@@ -18,51 +17,22 @@
         </li>
         <li class="dropdown">
           <a href="#"  class="dropbtn">Metal</a>
-          <div class="dropdown-content">
-            <a href="#">Metal1</a>
-            <a href="#">Metal2</a>
-            <a href="#">Metal3</a>
-          </div>
         </li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Plástico</a>
-          <div class="dropdown-content">
-            <a href="#">Plástico1</a>
-            <a href="#">Plástico2</a>
-            <a href="#">Plástico3</a>
-          </div>
         </li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Vidro</a>
-          <div class="dropdown-content">
-            <a href="#">Vidro1</a>
-            <a href="#">Vidro2</a>
-            <a href="#">Vidro3</a>
-          </div>
         </li>
-        <li style="float:right">
-          <a href="#" id="loginform">Entrar</a>
-          <div class="login">
-            <div class="arrow-up"></div>
-            <div class="formholder">
-              <div class="randompad">
-                <form action="index1.html"> <!-- action= pesquisar cadastro no banco + logar -->
-                  <fieldset>
-                    <label name="email">Email</label>
-                    <input type="email" placeholder="example@example.com" />
-                    <label name="password">Senha</label>
-                    <input type="password" placeholder="**********" />
-                    <input class="submit" type="submit" value="Submeter" />
-                  </fieldset>
-                </form>
-              </div>
-            </div>
-          </div>
-          <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-          <script src="js/index.js"></script>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Papel</a>
         </li>
-        <li style="float:right">
-          <a href="register.html">Cadastrar</a>
+        <li style="float:right" class="dropdown">
+          <a href="#" id="loginform" class="dropbtn">Pedro</a>
+          <div id="profile-ddc" class="dropdown-content">
+            <a href="sell.html">Anunciar Produto</a>
+            <a href="index.html">Sair</a>
+          </div>
         </li>
 
         <li style="float:right">
@@ -120,7 +90,7 @@
             </select>
           </p>
           <p>
-            <label class="optional">Preço por unidade (R$/u) *
+            <label>Preço por unidade (R$/u) *
             </label>
             <input name="priceperunit" type="number"/>
             <label>Preço Negociável? *
@@ -131,10 +101,16 @@
               <option value="no">Não</option>
             </select>
           </p>
+          <p>
+            <label>Foto do produto *
+            </label>
+            <input name="product-img" type="file" class="product-img"/>
+          </p>
         </fieldset>
         <label class="obinfo">*campos obrigatórios.
         </label>
-        <div><input name="register_btn" class="submit" type="submit" value="Submeter anúncio &raquo;" /></div>
+        <div><input name="register_btn" class="submit" type="submit"
+          value="Submeter anúncio &raquo;" /></div>
       </form>
     </div>
 
