@@ -74,69 +74,32 @@
       </ul>
       <!-- menu bar -->
       <form action="index1.html" class="register">
-        <h1>O que deseja anunciar?</h1>
-        <fieldset class="row1">
-          <legend>Detalhes Gerais
-          </legend>
-          <p>
-            <label>Tipo de anúncio *</label>
-            <select>
-              <option value=""> </option>
-              <option value="buy">Compra</option>
-              <option value="sell">Venda</option>
-            </select>
-            <label>Nome do Anúncio *
-            </label>
-            <input name="ad-title" type="text"/>
-          </p>
-          <p>
-            <label>Produto *
-            </label>
-            <input name="ad-product" type="text"/>
-            <label>Composição Básica *
-            </label>
-            <select>
-              <option value=""> </option>
-              <option value="metal">Metal</option>
-              <option value="plastic">Plástico</option>
-              <option value="glass">Vidro</option>
-              <option value="paper">Papel</option>
-            </select>
-          </p>
-        </fieldset>
-        <fieldset class="row2">
-          <legend>Detalhes Específicos
-          </legend>
-          <p>
-            <label>Quantidade disponível *
-            </label>
-            <input name="amount" type="number" />
-            <label>Unidade de medida *
-            </label>
-            <select>
-              <option value=""> </option>
-              <option value="kg">quilo [kg]</option>
-              <option value="m">metro [m]</option>
-            </select>
-          </p>
-          <p>
-            <label class="optional">Preço por unidade (R$/u) *
-            </label>
-            <input name="priceperunit" type="number"/>
-            <label>Preço Negociável? *
-            </label>
-            <select>
-              <option value=""> </option>
-              <option value="yes">Sim</option>
-              <option value="no">Não</option>
-            </select>
-          </p>
-        </fieldset>
-        <label class="obinfo">*campos obrigatórios.
-        </label>
-        <div><input name="register_btn" class="submit" type="submit" value="Submeter anúncio &raquo;" /></div>
-      </form>
-    </div>
+        <h1 id="header_detail">Vendo: Garrafas PET</h1>
+        <div class="details">
+          <div class="col-img">
+            <img class="detail-img" src="img/example2.jpg" alt="Imagem Ilustrativa do Produto">
+          </div>
+          <div class="col-desc">
+            <p>
+              Produto: Garrafa PET <br>
+              Quantidade disponível: 10kg <br>
+              Preço/qnt: R$ 10,00/kg <br>
+            </p>
+          </div>
+          <div class="col-buy">
+            <form>
+              <legend>Comprar</legend>
+              <label>Quantidade:</label>
+              <select>
+                <option> 1 </option>
+                <option> 5 </option>
+                <option> 10 </option>
+              </select>
+              <input class="submit" type="submit" value="Finalizar Compra"/>
+            </form>
+          </div>
+        </div>
+      </div>
 
   </body>
 </html>

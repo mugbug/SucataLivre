@@ -6,8 +6,6 @@
 }
 .menu_bar {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: #333;
 }
@@ -47,7 +45,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 #profile-ddc {
   position: fixed;
-  right: 8px;
+  right: 0px;
 }
 
 .dropdown-content a:hover {
@@ -109,7 +107,7 @@ li a:hover, .dropdown:hover .dropbtn {
 /*--- login popup ----*/
 .login {
   position: fixed;
-  right: 8px;
+  right: 0;
   width: 350px;
   display: none;
 }
@@ -198,6 +196,7 @@ li a:hover, .dropdown:hover .dropbtn {
   text-transform: uppercase;
   text-shadow: 2px 2px #000;
   line-height: 1;
+  margin-bottom: 20px;
 }
 .banner_desc h2{
   color: #fff;
@@ -313,11 +312,57 @@ form.register input{
   float: left;
   margin-right: 5px;
 }
+
+form.register select {
+  border: 1px solid #E1E1E1;
+  width: 142px;
+  float: left;
+  margin-right: 5px;
+}
+
 form.register input.submit {
   margin-top: 30px;
   margin-left: 30px;
-  width: 200px;
+  padding: auto 4px;
+  width: auto;
 }
 label.obinfo {
   font-size: 8px;
+}
+
+/*produc details page*/
+.details {
+  display: inline-block;
+}
+
+#header_detail {
+  padding: 0;
+  margin: 10px auto 10px 20px;
+}
+
+.detail-img {
+  width: 350px;
+  height: 350px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #E1E1E1;
+  clear:both;
+}
+
+.col-img {
+  float: left;
+  height: 365px;
+  border-right: 1px solid #E1E1E1;
+}
+
+.col-desc {
+  width: 300px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  float: right;
+}
+
+.col-buy {
+  margin-left: 10px;
 }
