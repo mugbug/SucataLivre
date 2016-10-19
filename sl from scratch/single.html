@@ -45,29 +45,42 @@
       </ul>
       <!-- menu bar -->
       <form action="index1.html" class="register">
-        <h1 id="header_detail">Vendo: Garrafas PET</h1>
+        <h1 id="detail-header">Vendo: Garrafas PET</h1>
         <div class="details">
           <div class="col-img">
             <img class="detail-img" src="img/example2.jpg" alt="Imagem Ilustrativa do Produto">
           </div>
           <div class="col-desc">
             <p>
-              Produto: Garrafa PET <br>
-              Quantidade disponível: 10kg <br>
-              Preço/qnt: R$ 10,00/kg <br>
+              <fieldset>
+                <legend>Detalhes</legend>
+                <label class="detaillabel">Produto:
+                </label>
+                <label class="inputlabel">Garrafa PET
+                </label> <br>
+                <label class="detaillabel">Quantidade disponível:
+                </label>
+                <label class="inputlabel">10kg
+                </label> <br>
+                <label class="detaillabel">Preço/qnt:
+                </label>
+                <label class="inputlabel">R$ 10,00/kg
+                </label> <br>
+              </fieldset>
+              <form>
+                <fieldset>
+                  <legend>Comprar</legend>
+                  <label>Quantidade:
+                  </label>
+                  <select>
+                    <option>1</option>
+                    <option>5</option>
+                    <option>10</option>
+                  </select>
+                  <input class="submit" type="submit" value="Finalizar Compra"/>
+                </fieldset>
+              </form>
             </p>
-          </div>
-          <div class="col-buy">
-            <form>
-              <legend>Comprar</legend>
-              <label>Quantidade:</label>
-              <select>
-                <option> 1 </option>
-                <option> 5 </option>
-                <option> 10 </option>
-              </select>
-              <input class="submit" type="submit" value="Finalizar Compra"/>
-            </form>
           </div>
         </div>
       </div>
